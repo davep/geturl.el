@@ -61,7 +61,7 @@ markup."
                                   (format "osascript -e '%s'"
                                           geturl-macos-script)))))
           (insert (if markup (format "<URL:%s>" url ) url))
-        (error "Could not get the URL from \"%s\"" geturl-browser-application-name))
+        (error "Could not get the URL"))
     (error "System type '%s' is currently unsupported" system-type)))
 
 (provide 'geturl)
