@@ -38,13 +38,18 @@
   :prefix "geturl-")
 
 (defcustom geturl-macos-script "
-if application \"Safari\" is running then
-  tell application \"Safari\"
-    get URL of current tab of first window
-  end tell
+if application \"Google Chrome\" is running then
+  tell application \"Google Chrome\" to get URL of active tab of first window
+else if application \"Safari\" is running then
+  tell application \"Safari\" to get URL of current tab of first window
 end if
 "
-  "AppleScript code to get the URL from the browser on macOS."
+  "AppleScript code to get the URL from the browser on macOS.
+
+By default it looks to see if Google Chrome is running, then
+takes the URL from that. If it isn't it them looks for Safari and
+takes it from that if it's running.
+"
   :type 'text
   :group 'geturl)
 
