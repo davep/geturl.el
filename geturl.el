@@ -2,7 +2,7 @@
 ;; Copyright 2024 by Dave Pearson <davep@davep.org>
 
 ;; Author: Dave Pearson <davep@davep.org>
-;; Version: 0.01
+;; Version: 1.0
 ;; Keywords: hypermedia
 ;; URL: https://github.com/davep/geturl.el
 ;; Package-Requires: ((emacs "25.1"))
@@ -48,8 +48,7 @@ end if
 
 By default it looks to see if Google Chrome is running, then
 takes the URL from that. If it isn't it them looks for Safari and
-takes it from that if it's running.
-"
+takes it from that if it's running."
   :type 'text
   :group 'geturl)
 
