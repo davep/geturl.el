@@ -54,7 +54,7 @@ takes it from that if it's running."
 
 ;;;###autoload
 (defun geturl-insert (&optional markup)
-  "Insert the URL of the 'topmost' instance of your web browser.
+  "Insert the URL of the top-most instance of your web browser.
 
 MARKUP is a prefix argument. nil means insert the URL as-is. any
 other value means the URL should be inserted wrapped in <URL:...>
